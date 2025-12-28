@@ -1,10 +1,10 @@
 import Image from "next/image";
-
+import about from "../../public/images/about.jpg"
 export default function AboutSection() {
     return (
         <section
             id="about"
-            className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-800 py-20 lg:py-32 relative overflow-hidden"
+            className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-800 py-5 lg:py-12 relative overflow-hidden"
         >
             {/* Decorative Background Elements */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-gray-200 rounded-full blur-3xl opacity-30 -z-10"></div>
@@ -30,7 +30,7 @@ export default function AboutSection() {
                         <div className="relative group">
                             <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-600 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500"></div>
                             <Image
-                                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
+                                src={about}
                                 alt="Professional person in business attire"
                                 width={800}
                                 height={500}
