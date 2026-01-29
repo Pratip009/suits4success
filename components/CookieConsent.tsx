@@ -11,11 +11,13 @@ const CookieConsent = () => {
     // Check if user has already accepted cookies
     const hasConsent = localStorage.getItem("cookieConsent");
     if (!hasConsent) {
-      // Delay showing the banner for better UX
-      setTimeout(() => {
+      // Wait for loader to finish (4s) + additional delay (4s) = 8s total
+      const timer = setTimeout(() => {
         setShowConsent(true);
         setIsVisible(true);
-      }, 1500);
+      }, 8000);
+
+      return () => clearTimeout(timer);
     }
   }, []);
 
