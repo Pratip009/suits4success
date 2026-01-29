@@ -2,7 +2,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
-import { FaDollarSign, FaTshirt, FaHeart, FaHandHoldingHeart, FaArrowRight, FaCheckCircle, FaUsers, FaGraduationCap, FaBriefcase, FaBoxOpen } from "react-icons/fa";
+import {
+  FaDollarSign,
+  FaTshirt,
+  FaHeart,
+  FaHandHoldingHeart,
+  FaArrowRight,
+  FaCheckCircle,
+  FaUsers,
+  FaGraduationCap,
+  FaBriefcase,
+  FaBoxOpen,
+} from "react-icons/fa";
 
 export default function Donate() {
   return (
@@ -17,7 +28,9 @@ export default function Donate() {
           <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <div className="mb-12 flex items-center gap-3 text-xs uppercase tracking-widest text-gray-500 font-medium">
-              <a href="/" className="hover:text-gray-900 transition-colors">Home</a>
+              <a href="/" className="hover:text-gray-900 transition-colors">
+                Home
+              </a>
               <span className="text-gray-300">/</span>
               <span className="text-gray-400">Get Involved</span>
               <span className="text-gray-300">/</span>
@@ -38,19 +51,29 @@ export default function Donate() {
                     </span>
                   </h1>
                   <p className="text-lg text-gray-600 leading-relaxed font-light max-w-lg">
-                    We rely on donations to provide professional attire, seminars and workforce development programs. Your support directly impacts lives in our community.
+                    We rely on donations to provide professional attire,
+                    seminars and workforce development programs. Your support
+                    directly impacts lives in our community.
                   </p>
                 </div>
 
                 {/* Quick Stats */}
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-gray-50 p-6 border border-gray-200">
-                    <div className="text-2xl font-light text-gray-900 mb-1">500+</div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest font-medium">Lives Changed</div>
+                    <div className="text-2xl font-light text-gray-900 mb-1">
+                      500+
+                    </div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest font-medium">
+                      Lives Changed
+                    </div>
                   </div>
                   <div className="bg-gray-50 p-6 border border-gray-200">
-                    <div className="text-2xl font-light text-gray-900 mb-1">100%</div>
-                    <div className="text-xs text-gray-500 uppercase tracking-widest font-medium">Goes to Programs</div>
+                    <div className="text-2xl font-light text-gray-900 mb-1">
+                      100%
+                    </div>
+                    <div className="text-xs text-gray-500 uppercase tracking-widest font-medium">
+                      Goes to Programs
+                    </div>
                   </div>
                 </div>
 
@@ -92,16 +115,28 @@ export default function Donate() {
                   <div className="absolute bottom-8 left-8 right-8 bg-white/98 backdrop-blur-sm p-8 border border-gray-200">
                     <div className="grid grid-cols-3 gap-6 text-center">
                       <div>
-                        <div className="text-4xl font-light text-gray-900 tracking-tight">$50</div>
-                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">Suits 1 Person</div>
+                        <div className="text-4xl font-light text-gray-900 tracking-tight">
+                          $50
+                        </div>
+                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">
+                          Suits 1 Person
+                        </div>
                       </div>
                       <div>
-                        <div className="text-4xl font-light text-gray-900 tracking-tight">$100</div>
-                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">Funds Seminar</div>
+                        <div className="text-4xl font-light text-gray-900 tracking-tight">
+                          $100
+                        </div>
+                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">
+                          Funds Seminar
+                        </div>
                       </div>
                       <div>
-                        <div className="text-4xl font-light text-gray-900 tracking-tight">$250</div>
-                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">Training Course</div>
+                        <div className="text-4xl font-light text-gray-900 tracking-tight">
+                          $250
+                        </div>
+                        <div className="text-xs uppercase tracking-widest text-gray-500 mt-2 font-medium">
+                          Training Course
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -135,32 +170,46 @@ export default function Donate() {
                   <div className="w-12 h-12 border border-gray-900 flex items-center justify-center mb-8 group-hover:bg-gray-900 transition-all duration-500">
                     <FaDollarSign className="w-5 h-5 text-gray-900 group-hover:text-white transition-colors duration-500" />
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-normal text-gray-900 mb-4 tracking-tight">Financial Donation</h3>
+                  <h3 className="text-2xl lg:text-3xl font-normal text-gray-900 mb-4 tracking-tight">
+                    Financial Donation
+                  </h3>
                   <p className="text-gray-600 leading-relaxed font-light mb-8">
-                    Support our programs with a financial contribution. Your donation funds professional attire, seminars, and workforce development training.
+                    Support our programs with a financial contribution. Your
+                    donation funds professional attire, seminars, and workforce
+                    development training.
                   </p>
 
                   <div className="space-y-4 pt-4 border-t border-gray-200 mb-8">
                     <div className="flex items-center gap-3">
                       <FaUsers className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Fund professional suiting services</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Fund professional suiting services
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaGraduationCap className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Support workforce training programs</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Support workforce training programs
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaBriefcase className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Enable professional development seminars</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Enable professional development seminars
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaHeart className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Empower community members</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Empower community members
+                      </span>
                     </div>
                   </div>
 
                   <a
-                    href="#"
+                    href="https://donate.stripe.com/bJebJ25ry3psbtGdvg6wE0O"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group/btn inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white font-normal hover:bg-gray-800 transition-all duration-300 text-sm uppercase tracking-wide"
                   >
                     <FaDollarSign className="w-4 h-4" />
@@ -176,27 +225,39 @@ export default function Donate() {
                   <div className="w-12 h-12 border border-gray-900 flex items-center justify-center mb-8 group-hover:bg-gray-900 transition-all duration-500">
                     <FaTshirt className="w-5 h-5 text-gray-900 group-hover:text-white transition-colors duration-500" />
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-normal text-gray-900 mb-4 tracking-tight">Clothing Donation</h3>
+                  <h3 className="text-2xl lg:text-3xl font-normal text-gray-900 mb-4 tracking-tight">
+                    Clothing Donation
+                  </h3>
                   <p className="text-gray-600 leading-relaxed font-light mb-8">
-                    Donate gently used professional clothing and accessories. Your items directly help job seekers dress for success and secure employment.
+                    Donate gently used professional clothing and accessories.
+                    Your items directly help job seekers dress for success and
+                    secure employment.
                   </p>
 
                   <div className="space-y-4 pt-4 border-t border-gray-200 mb-8">
                     <div className="flex items-center gap-3">
                       <FaCheckCircle className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Professional suits and business attire</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Professional suits and business attire
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaCheckCircle className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Dress shoes and accessories</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Dress shoes and accessories
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaCheckCircle className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Gently used, clean condition</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Gently used, clean condition
+                      </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <FaCheckCircle className="w-4 h-4 text-gray-900 flex-shrink-0" />
-                      <span className="text-gray-700 font-light text-sm">Tax deductible donation</span>
+                      <span className="text-gray-700 font-light text-sm">
+                        Tax deductible donation
+                      </span>
                     </div>
                   </div>
 
@@ -240,9 +301,12 @@ export default function Donate() {
                   <div className="w-12 h-12 border border-gray-900 flex items-center justify-center mb-8 group-hover:bg-gray-900 transition-all duration-500">
                     <FaTshirt className="w-5 h-5 text-gray-900 group-hover:text-white transition-colors duration-500" />
                   </div>
-                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">Professional Attire</h3>
+                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">
+                    Professional Attire
+                  </h3>
                   <p className="text-gray-600 leading-relaxed font-light">
-                    Provide complete professional wardrobes to job seekers preparing for interviews and starting new careers.
+                    Provide complete professional wardrobes to job seekers
+                    preparing for interviews and starting new careers.
                   </p>
                 </div>
               </div>
@@ -253,9 +317,12 @@ export default function Donate() {
                   <div className="w-12 h-12 border border-gray-900 flex items-center justify-center mb-8 group-hover:bg-gray-900 transition-all duration-500">
                     <FaGraduationCap className="w-5 h-5 text-gray-900 group-hover:text-white transition-colors duration-500" />
                   </div>
-                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">Training Programs</h3>
+                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">
+                    Training Programs
+                  </h3>
                   <p className="text-gray-600 leading-relaxed font-light">
-                    Fund workforce readiness courses teaching essential office and computer skills for career success.
+                    Fund workforce readiness courses teaching essential office
+                    and computer skills for career success.
                   </p>
                 </div>
               </div>
@@ -266,9 +333,12 @@ export default function Donate() {
                   <div className="w-12 h-12 border border-gray-900 flex items-center justify-center mb-8 group-hover:bg-gray-900 transition-all duration-500">
                     <FaBriefcase className="w-5 h-5 text-gray-900 group-hover:text-white transition-colors duration-500" />
                   </div>
-                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">Professional Seminars</h3>
+                  <h3 className="text-xl font-normal text-gray-900 mb-4 tracking-tight">
+                    Professional Seminars
+                  </h3>
                   <p className="text-gray-600 leading-relaxed font-light">
-                    Support expert-led seminars on business development, financial independence, and career growth.
+                    Support expert-led seminars on business development,
+                    financial independence, and career growth.
                   </p>
                 </div>
               </div>
@@ -292,14 +362,15 @@ export default function Donate() {
             </h2>
 
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-              Your generosity helps provide professional clothing, workforce training, and
-              support to clients as they work toward employment and financial stability.
+              Your generosity helps provide professional clothing, workforce
+              training, and support to clients as they work toward employment
+              and financial stability.
             </p>
 
             <div className="flex flex-wrap justify-center gap-6">
               {/* Financial Donation */}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdVwo4eUetST3JHNk8alSVH_T6Nz10Rdg0xQ08nWPmQ8VwlBQ/viewform?usp=header"
+                href="https://donate.stripe.com/bJebJ25ry3psbtGdvg6wE0O"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-12 py-5 bg-white text-gray-900 font-normal text-sm uppercase tracking-widest hover:bg-gray-100 transition-all duration-300"
@@ -323,7 +394,6 @@ export default function Donate() {
             </div>
           </div>
         </div>
-
       </section>
     </div>
   );
