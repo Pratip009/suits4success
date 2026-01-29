@@ -33,13 +33,15 @@ export default function Navbar() {
             className="flex items-center"
             onClick={closeMobileMenu}
           >
-            <Image
-              src={logo}
-              width={150}
-              height={150}
-              alt="Suits 4 Success"
-              className="h-8 md:h-15 w-auto object-contain"
-            />
+            <div className="w-full h-16 flex items-center">
+              <Image
+                src={logo}
+                width={150}
+                height={50}
+                alt="Suits 4 Success"
+                className="w-auto object-contain"
+              />
+            </div>
           </Link>
 
           {/* Mobile Menu Button */}

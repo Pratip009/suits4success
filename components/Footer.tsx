@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 import logo from "../public/images/s4s.png";
 export default function Footer() {
   return (
@@ -9,13 +14,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Organization Info */}
           <div className="lg:col-span-2">
-            <Image
-              src={logo}
-              width={250}
-              height={250}
-              alt="Suits 4 Success"
-              className="h-8 md:h-20 w-auto object-contain"
-            />
+            <div className="w-full h-16 flex items-center">
+              <Image
+                src={logo}
+                width={150}
+                height={50}
+                alt="Suits 4 Success"
+                className="w-auto object-contain"
+              />
+            </div>
             <p className="text-gray-600 leading-relaxed mb-6 max-w-md">
               Empowering low-income and unemployed individuals in Hudson County
               through professional attire and workforce development.

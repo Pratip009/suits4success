@@ -39,7 +39,7 @@ const CinematicLoader = () => {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1.5, opacity: 0.3 }}
               transition={{ duration: 2, ease: "easeOut" }}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-gray-400/20 to-transparent rounded-full blur-3xl"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-gradient-radial from-gray-400/20 to-transparent rounded-full blur-3xl"
             />
 
             {/* Animated lines */}
@@ -60,7 +60,7 @@ const CinematicLoader = () => {
           </div>
 
           {/* Main content */}
-          <div className="relative z-10 flex flex-col items-center gap-8">
+          <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 px-4">
             {/* Logo/Brand animation */}
             <div className="relative">
               {/* Outer rotating ring */}
@@ -71,9 +71,9 @@ const CinematicLoader = () => {
                   repeat: Infinity,
                   ease: "linear",
                 }}
-                className="absolute inset-0 -m-8"
+                className="absolute inset-0 -m-6 sm:-m-8"
               >
-                <div className="w-32 h-32 border-2 border-gray-900/30 rounded-full border-t-gray-900" />
+                <div className="w-24 h-24 sm:w-32 sm:h-32 border-2 border-gray-900/30 rounded-full border-t-gray-900" />
               </motion.div>
 
               {/* Inner pulsing circle */}
@@ -84,7 +84,7 @@ const CinematicLoader = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="w-16 h-16 bg-gray-900/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-900/10 backdrop-blur-sm rounded-full flex items-center justify-center"
               >
                 <motion.div
                   animate={{ scale: [0.8, 1, 0.8] }}
@@ -94,7 +94,7 @@ const CinematicLoader = () => {
                     ease: "easeInOut",
                     delay: 0.5,
                   }}
-                  className="w-8 h-8 bg-gray-900 rounded-full"
+                  className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-900 rounded-full"
                 />
               </motion.div>
             </div>
@@ -105,7 +105,7 @@ const CinematicLoader = () => {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                className="font-serif text-5xl md:text-7xl font-bold text-gray-900 tracking-wider"
+                className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-wider text-center"
               >
                 <motion.span
                   animate={{ opacity: [1, 0.5, 1] }}
@@ -124,7 +124,7 @@ const CinematicLoader = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 1, delay: 0.8, ease: "easeInOut" }}
-                className="h-[2px] w-64 bg-gradient-to-r from-transparent via-gray-900 to-transparent"
+                className="h-[2px] w-48 sm:w-64 md:w-72 bg-gradient-to-r from-transparent via-gray-900 to-transparent"
               />
 
               {/* Tagline */}
@@ -132,7 +132,7 @@ const CinematicLoader = () => {
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-                className="text-gray-700 text-sm md:text-base tracking-[0.3em] uppercase mt-4"
+                className="text-gray-700 text-xs sm:text-sm md:text-base tracking-[0.2em] sm:tracking-[0.3em] uppercase mt-2 sm:mt-4"
               >
                 Dress for Success
               </motion.p>
@@ -143,10 +143,10 @@ const CinematicLoader = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.5 }}
-              className="mt-8 flex flex-col items-center gap-4"
+              className="mt-6 sm:mt-8 flex flex-col items-center gap-3 sm:gap-4"
             >
               {/* Progress bar container */}
-              <div className="w-64 h-1 bg-gray-900/20 rounded-full overflow-hidden">
+              <div className="w-48 sm:w-64 md:w-72 h-1 bg-gray-900/20 rounded-full overflow-hidden">
                 <motion.div
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
@@ -174,18 +174,18 @@ const CinematicLoader = () => {
             </motion.div>
           </div>
 
-          {/* Corner decorative elements */}
+          {/* Corner decorative elements - Responsive */}
           <motion.div
             initial={{ opacity: 0, x: -50, y: -50 }}
             animate={{ opacity: 0.2, x: 0, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="absolute top-0 left-0 w-32 h-32 border-l-2 border-t-2 border-gray-900/40"
+            className="absolute top-0 left-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 border-l-2 border-t-2 border-gray-900/40"
           />
           <motion.div
             initial={{ opacity: 0, x: 50, y: 50 }}
             animate={{ opacity: 0.2, x: 0, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="absolute bottom-0 right-0 w-32 h-32 border-r-2 border-b-2 border-gray-900/40"
+            className="absolute bottom-0 right-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 border-r-2 border-b-2 border-gray-900/40"
           />
 
           {/* Cinematic vignette effect */}
